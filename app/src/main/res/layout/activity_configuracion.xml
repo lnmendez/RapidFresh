@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header_menu"
+    tools:context="com.hgoayt.rapidfresh.configuracion">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/conf_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/conf_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/conf_imgMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_AppBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/mail" />
+
+    <TextView
+        android:id="@+id/conf_txtMail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_imgMail"
+        android:layout_marginLeft="16dp"
+        android:text="Mail" />
+
+
+    <EditText
+        android:id="@+id/conf_editMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_txtMail"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:id="@+id/conf_imgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_editMail"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/conf_txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_imgPhone"
+        android:layout_marginLeft="16dp"
+        android:text="Telefono" />
+
+    <EditText
+        android:id="@+id/conf_editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conf_txtPhone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="savePerfil"
+        android:src="@drawable/edit" />
+
+</RelativeLayout>

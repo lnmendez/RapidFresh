@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/header_menu"
+    android:padding="20dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/draw_perfil"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:id="@+id/draw_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draw_perfil"
+        android:layout_marginLeft="10dp"
+        android:text="Nombre" />
+
+    <TextView
+        android:id="@+id/draw_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/draw_nombre"
+        android:layout_marginLeft="10dp"
+        android:text="Correo" />
+
+</RelativeLayout>

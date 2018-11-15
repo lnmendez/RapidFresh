@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgoayt.rapidfresh.nuevoContacto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/addContacto_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/addContacto_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/addContacto_imgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_AppBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/addContacto_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_imgName"
+
+        android:layout_marginLeft="16dp"
+        android:text="Nombre" />
+
+
+    <EditText
+        android:id="@+id/addContacto_editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_txtName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:id="@+id/addContacto_imgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_editName"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/addContacto_txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_imgPhone"
+        android:layout_marginLeft="16dp"
+        android:text="Telefono" />
+
+    <EditText
+        android:id="@+id/addContacto_editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addContacto_txtPhone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="addContacto"
+        android:src="@drawable/save" />
+
+</RelativeLayout>

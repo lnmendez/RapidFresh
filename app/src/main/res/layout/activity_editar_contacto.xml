@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hgoayt.rapidfresh.editarContacto">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/editContacto_AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/editContacto_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="@style/Base.ThemeOverlay.AppCompat.Dark">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/editContacto_imgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_AppBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/face" />
+
+    <TextView
+        android:id="@+id/editContacto_txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_imgName"
+
+        android:layout_marginLeft="16dp"
+        android:text="Nombre" />
+
+
+    <EditText
+        android:id="@+id/editContacto_editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_txtName"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <ImageView
+        android:id="@+id/editContacto_imgPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_editName"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/phone" />
+
+    <TextView
+        android:id="@+id/editContacto_txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_imgPhone"
+        android:layout_marginLeft="16dp"
+        android:text="Telefono" />
+
+    <EditText
+        android:id="@+id/editContacto_editPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editContacto_txtPhone"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editContacto_btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="editContacto"
+        android:src="@drawable/edit" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/editContacto_btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editContacto_btnEdit"
+        android:layout_alignParentEnd="true"
+        android:onClick="deleteContacto"
+        android:src="@drawable/delete" />
+
+</RelativeLayout>
